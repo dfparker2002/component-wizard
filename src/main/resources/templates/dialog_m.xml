@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    description="%description"
+    title="%head-title"
+    width="800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="Additional configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dynamicmultipanel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new item"
+                        xtype="dynamicmultipanel">
+                        <multiConfig
+                            jcr:primaryType="nt:unstructured"
+                            groupName="linkItems"
+                            nodeName="linkItem"/>
+                        <multiItems jcr:primaryType="cq:WidgetCollection">
+                            <linkTitle
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="No Content"
+                                fieldLabel="Title"
+                                name="title"
+                                width="400"
+                                xtype="textfield"/>
+                            <linkUrl
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="#"
+                                fieldLabel="URL"
+                                name="url"
+                                width="400"
+                                xtype="pathfield"/>
+                            <nWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in new window"
+                                name="nw"
+                                type="checkbox"
+                                xtype="selection"/>
+                        </multiItems>
+                    </dynamicmultipanel>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

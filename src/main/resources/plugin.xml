@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="CQ5 Component Wizards"
+            id="component-wizard">
+      </category>
+      <wizard
+            canFinishEarly="false"
+            category="CQ5ComponentWizard"
+            class="org.eclipse.plugins.cq.component.wizard.wizards.ComponentWizard"
+            icon="icons/CQ5-logo.png"
+            id="org.eclipse.plugins.cq.component.wizard.wizards.ComponentWizard"
+            name="CQ5 Component Wizard"
+            project="false">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.eclipse.plugins.cq.component.wizard.preferences.WizardPreferencePage"
+            id="org.eclipse.plugins.cq.component.wizard.preferences.WizardPreferencePage"
+            name="CQ5 Wizard Preferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.eclipse.plugins.cq.component.wizard.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+   </extension>
+
+</plugin>
