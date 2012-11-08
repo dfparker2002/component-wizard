@@ -15,8 +15,6 @@ public class PreferenceConstants {
 	
 	public static final String P_JS_CATEGORY_NAME = "jsCategoryName";
 	
-	public static final String P_JS_VARIABLE_NAME = "jsVariableName";
-	
 	public static final String P_TAGLIB_PREFIX = "taglibPrefix";
 	
 	public static final String P_TAGLIB_URL = "taglibUrl";

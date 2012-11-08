@@ -20,7 +20,6 @@ public class WizardPreferencePage extends FieldEditorPreferencePage implements I
 		addField(new DialogGroupList(PreferenceConstants.P_DIALOG_GROUP_NAME, "Component Group Name (Sidekick):", getFieldEditorParent()));
 		
 		addField(new StringFieldEditor(PreferenceConstants.P_JS_CATEGORY_NAME, "Javascript script category:", getFieldEditorParent()));
-		addField(new StringFieldEditor(PreferenceConstants.P_JS_VARIABLE_NAME, "Javascript variable name:", getFieldEditorParent()));
 		addField(new StringFieldEditor(PreferenceConstants.P_TAGLIB_PREFIX, "Taglib prefix name:", getFieldEditorParent()));
 		addField(new StringFieldEditor(PreferenceConstants.P_TAGLIB_URL, "Taglib url:", getFieldEditorParent()));
 	}

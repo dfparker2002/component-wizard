@@ -95,7 +95,6 @@ public class ComponentWizard extends Wizard implements INewWizard {
         cfg.setUseJS(cfgPage.isUseJs());
         
         cfg.setJsCategoryName(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_JS_CATEGORY_NAME));
-        cfg.setJsVariableName(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_JS_VARIABLE_NAME));
         cfg.setTaglibPrefix(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_TAGLIB_PREFIX));
         cfg.setTaglibUrl(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_TAGLIB_URL));
     }
@@ -171,8 +170,6 @@ public class ComponentWizard extends Wizard implements INewWizard {
             put("%js-file-name", cfg.getFolderName() + ".js");
             
             put("%js-category-name", cfg.getJsCategoryName());
-            put("%js-variable-name-main", cfg.getJsVariableName().toUpperCase());
-            put("%js-variable-name", cfg.getJsVariableName().toLowerCase());
             
             if (!cfg.getTaglibPrefix().isEmpty() && !cfg.getTaglibPrefix().isEmpty()) {
             	put("%my-taglib", "<%@ " + String.format("taglib prefix=\"%s\" uri=\"%s\" ", cfg.getTaglibPrefix(), cfg.getTaglibUrl()) + "%>");

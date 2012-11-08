@@ -23,7 +23,6 @@ public class Configurator {
 	private String authorName;
 
 	private String jsCategoryName;
-	private String jsVariableName;
 	private String taglibPrefix;
 	private String taglibUrl;
 	
@@ -135,14 +134,6 @@ public class Configurator {
 
 	public void setJsCategoryName(String jsCategoryName) {
 		this.jsCategoryName = jsCategoryName;
-	}
-
-	public String getJsVariableName() {
-		return jsVariableName;
-	}
-
-	public void setJsVariableName(String jsVariableName) {
-		this.jsVariableName = jsVariableName;
 	}
 
 	public String getTaglibPrefix() {

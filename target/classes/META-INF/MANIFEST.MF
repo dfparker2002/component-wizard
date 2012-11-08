@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Built-By: Andrii_Manuiev
+Build-Jdk: 1.7.0_09
+Created-By: Apache Maven Bundle Plugin
+Bnd-LastModified: 1352363111864
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.eclipse.plugins.cq.component.wizard.Activator
+Bundle-Description: This  Eclipse plugin allow to create a component f
+ rom template in easy way.
+Bundle-ManifestVersion: 2
+Bundle-Name: CQ component wizard
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: component-wizard; singleton:=true
+Bundle-Version: 0.0.1.SNAPSHOT
+Import-Package: org.eclipse.plugins.cq.component.wizard
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.ui.ide
+Tool: Bnd-1.50.0
+
